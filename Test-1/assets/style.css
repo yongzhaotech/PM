@@ -1,0 +1,58 @@
+* {
+  font-family: Helvetica;
+  box-sizing: border-box;
+  border: 0;
+  margin: 0;
+}
+
+.container {
+  width: 100%;
+}
+
+.center {
+  display: flex;
+  display: -webkit-flex;
+  align-items: center;
+  -webkit-align-items: center;	
+  justify-content: center;
+  -webkit-justify-content: center;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+}
+
+.text {
+  position: fixed;
+  z-index: 1000;
+  margin: 20vw;
+  font-size: 5vw;
+  color: #ffffff;
+  background-color: transparent;
+}
+
+.video {
+  position: absolute;
+  z-index: 999;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+}
+
+video {
+  width: 100vw;
+  height: auto;
+}
+
+@keyframes animateThrough {
+	from { opacity: 1; margin-left: 20vw; margin-right: 20vw; }
+	to { opacity: 0; margin-left: 130vw; margin-right: -90vw; }
+}
+
+.off-rainbow {
+	animation-name: animateThrough;
+	animation-duration: 2.5s;
+	animation-timing-function: linear;
+	animation-fill-mode: forwards;
+}
